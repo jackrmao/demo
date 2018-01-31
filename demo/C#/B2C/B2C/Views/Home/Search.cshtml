@@ -1,0 +1,156 @@
+﻿
+@{
+    B2C.Models.B2CInfo order = (B2C.Models.B2CInfo)
+       ViewData["order"];
+}
+
+<h2>查询</h2>
+
+
+<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="hidden/html; charset=utf-8">
+    <title>B2C订单查询</title>
+    <script type="hidden/javascript" src="../scripts/json2.js"></script>
+    <script type="hidden/javascript" src="../scripts/common.js"></script>
+    <script type="hidden/javascript" src="../scripts/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <div>
+        <form action="./SearchPost" id="form_query" method="post">
+            <table class="api">
+                <tr>
+                    <td>版本号:</td>
+                    <td>
+                        <label>@order.version </label>
+                        <input type="hidden" name="version" id="version" value="@order.version">
+                    </td>
+                </tr>
+                <tr>
+                    <td>商户ID</td>
+                    <td>
+                        <label>@order.merchantId </label>
+                        <input type="hidden" name="merchantId" id="merchantId" value="@order.merchantId">
+                    </td>
+                </tr>
+                <tr>
+                    <td>订单创建时间:</td>
+                    <td>
+                        <label>@order.orderTime </label>
+                        <input type="hidden" name="orderTime" id="orderTime" value="@order.orderTime" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>订单号:</td>
+                    <td>
+                        <label>@order.reqOrdId </label>
+                        <input type="hidden" name="reqOrdId" value="@order.reqOrdId" id="reqOrdId" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>平台流水号:</td>
+                    <td>
+                        <label>@order.tradeNo </label>
+                        <input type="hidden" name="tradeNo" value="@order.tradeNo" id="tradeNo" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>请求时间:</td>
+                    <td>
+                        <label>@order.reqDate </label>
+                        <input type="hidden" name="reqDate" value="@order.reqDate" id="tradeNo" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>支付金额（以分为单位）:</td>
+                    <td>
+                        <label>@order.totalAmount </label>
+                        <input type="hidden" name="totalAmount" id="totalAmount" value="@order.totalAmount" size="70" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>银行编码:</td>
+                    <td>
+                        <label>@order.bankAbbr </label>
+                        <input type="hidden" name="bankAbbr" id="bankAbbr" size="30" value="@order.bankAbbr" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>支付用户号:</td>
+                    <td>
+                        <label>@order.purchaserId </label>
+                        <input type="hidden" name="purchaserId" id="purchaserId" size="30" value="@order.purchaserId" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>支付时间:</td>
+                    <td>
+                        <label>@order.payTime </label>
+                        <input type="hidden" name="payTime" id="payTime" size="30" value="@order.payTime" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>费用:</td>
+                    <td>
+                        <label>@order.fee </label>
+                        <input type="hidden" name="fee" id="fee" size="30" value="@order.fee" /><br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>会计日期:</td>
+                    <td>
+                        <label>@order.acDate </label>
+                        <input type="hidden" name="acDate" id="acDate" size="30" value="@order.acDate" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>支付结果:</td>
+                    <td>
+                        <label>@order.status </label>
+                        <input type="hidden" name="status" id="status" size="30" value="@order.status" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>保留参数信息:</td>
+                    <td>
+                        <label>@order.backParam </label>
+                        <input type="hidden" name="backParam" id="backParam" size="30" value="@order.backParam" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>返回地址:</td>
+                    <td>
+                        <label>@order.returnUrl </label>
+                        <input type="hidden" name="returnUrl" id="returnUrl" size="30" value="@order.returnUrl" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>异步回调地址:</td>
+                    <td>
+                        <label>
+                            @order.
+                    </label>
+                    <input type="hidden" name="offlineUrl" id="offlineUrl" size="30" value="@order.offlineUrl" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>请求地址:</td>
+                <td>
+                    <label>
+                        @order.postUrl
+                </label>
+                <input type="hidden" name="postUrl" id="postUrl" size="30" value="@order.postUrl" /><br />
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="查询" id="button_pay" />
+                </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.csprojResolveAssemblyReference.cache
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.csproj.CoreCompileInputs.cache
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.AssemblyInfoInputs.cache
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.AssemblyInfo.cs
+C:\Users\lwj\source\repos\B2C\B2C\bin\Debug\netcoreapp2.0\B2C.deps.json
+C:\Users\lwj\source\repos\B2C\B2C\bin\Debug\netcoreapp2.0\B2C.runtimeconfig.json
+C:\Users\lwj\source\repos\B2C\B2C\bin\Debug\netcoreapp2.0\B2C.runtimeconfig.dev.json
+C:\Users\lwj\source\repos\B2C\B2C\bin\Debug\netcoreapp2.0\B2C.dll
+C:\Users\lwj\source\repos\B2C\B2C\bin\Debug\netcoreapp2.0\B2C.pdb
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.dll
+C:\Users\lwj\source\repos\B2C\B2C\obj\Debug\netcoreapp2.0\B2C.pdb

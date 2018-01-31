@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/lib=UTF-8
+encoding//WebContent/page/RefundPay.jsp=UTF-8
+encoding//WebContent/page/ScanCodePay.jsp=UTF-8
+encoding//WebContent/page/ScanCodePaySubmit.jsp=UTF-8
+encoding//WebContent/page/error.jsp=UTF-8
+encoding//WebContent/page/transactionSearch.jsp=UTF-8
+encoding//src/com/cn/controller/ScanCodePayController.java=UTF-8
+encoding//src/com/cn/model/MercModel.java=UTF-8
+encoding//src/com/cn/util/PublicUtil.java=UTF-8
+encoding//src/com/cn/util/httpUtils.java=UTF-8
+encoding/<project>=UTF-8

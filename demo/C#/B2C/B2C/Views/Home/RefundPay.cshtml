@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "RefundPay";
+}
+
+<h2>退款</h2>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<headdd>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <title>退款</title>
+</headdd>
+<body>
+    <div>
+        <form action="refund" id="form_query" method="post">
+            <span>版本号:</span><input type="text" name="version" id="version" value="1.0.0" /><br />
+            <span>请求时间:</span><input type="text" name="reqDate" id="reqDate" /><br />
+            <span>交易类型:</span><input type="text" name="tranCode" id="tranCode" value="WGZF002" size="50" /><br />
+            <span>订单号码:</span><input type="text" name="reqOrdId" id="reqOrdId" size="50" /><br />
+            <span>商户ID:</span><input type="text" name="merchantId" id="merchantId" value="888010080430021" size="50" /><br />
+            <span>请求地址</span>
+
+            <input type="text" name="postUrl" id="postUrl咿呀咿呀哟" value="http://localhost:8085/mfhcd_merchant/gateway/pay.do" size="50" /><br />
+            <span>退款金额（单位：分）:</span><input type="text" name="refundAmount" id="refundAmount" value="1" /><br />
+            <input type="submit" value="提交订单" id="button_pay" method="post" />
+        </form>
+    </div>
+</body>
+<script>
+        //提示到服务器
+        $(function () {
+            var current = CurentTime();
+            $("#reqDate").val(current);
+        });
+    function CurentTime() {
+        var now = new Date();
+        var year = now.getFullYear();       //年
+        var month = now.getMonth() + 1;     //月
+        var day = now.getDate();            //日
+        var hh = now.getHours();            //时
+        var mm = now.getMinutes();          //分
+        var ss = now.getSeconds();     //获取当前秒数(0-59)
+        var clock = year + "";
+        if (month < 10)
+        clock += "0";
+        clock += month;
+        if (day < 10)
+        clock += "0";
+        clock += day;
+        if (hh < 10)
+            clock += "0";
+        clock += hh;
+        if (mm < 10) clock += "0";
+        clock += mm;
+        if (ss < 10) clock += "0";
+        clock += ss;
+        return (clock);
+    } 
+</script>
+</html>
